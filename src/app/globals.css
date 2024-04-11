@@ -13,3 +13,13 @@
         scrollbar-width: none; /* Firefox */
     }
   }
+
+  /* Customize colors as needed */
+.fa-star-o { 
+    color: #ccc;
+  }
+  
+  .fa-star {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
