@@ -24,7 +24,11 @@ const MovieDetail = async ({ params }) => {
                 <div className="h-[560px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
                   <img
                     className="w-full h-full object-cover"
-                    src={movieData.payload.image ? movieData.payload.image : '/defualt.jpg'}
+                    src={
+                      movieData.payload.image
+                        ? movieData.payload.image
+                        : "/defualt.jpg"
+                    }
                     alt="Product Image"
                   />
                 </div>
@@ -33,20 +37,18 @@ const MovieDetail = async ({ params }) => {
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                   {movieData.payload.movie_title}
                 </h2>
-           
-                
+
                 <div className="mb-4">
                   <span className="font-bold text-gray-700 dark:text-gray-300">
-                  Released Year:
+                    Released Year:
                   </span>
                   <div className="flex items-center mt-2">
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {movieData.payload.released_year}
-                  </p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
+                      {movieData.payload.released_year}
+                    </p>
                   </div>
                 </div>
 
-                
                 <div className="mb-4">
                   <span className="font-bold text-gray-700 dark:text-gray-300">
                     Rating:
